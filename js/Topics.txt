@@ -1,0 +1,30 @@
+function as expression
+Functions as arguments
+Returning Function  - used as function factory for more functions
+Callback function (function as arguments)
+	
+	Array.foreach() - calls the function as parameter for each element of array.
+	Array.map() - Used to create a new array from existing array with manipulation
+	Arrow Function - new way to write call back function. remove word function, add =>
+	Array.find - searches first occurence of match.
+	Array.filter  - new array with matching filter condition
+	Array.every - return boolean if condition matches for all element
+	Array.some - return boolean if condition matches any of array element.
+	Array.sort - new array after sorting.
+	Array.reduce - gives single result like sum of array, max, avg, like group by etc.
+
+New Features:
+
+Default param - function (x, y=1) {...}
+Spread - Math.max(...nums) - passes element of num array as comma separated.
+Arguments - like String args in Java. It is not an array but capture all args despite cnt.
+Rest - replaces argument function(...num) capture all args in array called num
+Destructuring - Assigning array elements to variables.
+
+Objects:
+
+shorthand object {a,b,c} with a b c as key with value of a b c variable.
+Computed property - [] like {[user] : "SS" }
+Shorthand method - method name is taken as key of method .
+
+Promise: sort of try/catch. Resolve or Reject using .then and .catch
