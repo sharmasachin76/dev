@@ -10,7 +10,11 @@
   "author": "Sachin",
   "license": "ISC",
   "dependencies": {
+    "cookie-session": "^1.4.0",
     "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "multer": "^1.4.2",
+    "mysql": "^2.18.1",
     "nodemon": "^2.0.4"
   }
 }
