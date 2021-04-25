@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  
+}
+
+.form-control{
+  height:20px;
+  width: 150px;
+  margin:auto;
+  
+}
+.btn{
+  background-color: black;
+  color:white;
+  width: 60px;
+  margin: auto;
+}
