@@ -2,9 +2,11 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const db = require('./db/users');
+const cors = require('cors');
 
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
+app.use(cors());
 
 app.get("/",(req,res)=>{
     res.send('DB Backend for react demo app....');
