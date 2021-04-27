@@ -3,21 +3,35 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import Axios from 'axios';
 
+
 function App() {
 
   const [name,setName] = useState('');
   const [age,setAge] = useState('');
   const [userData, setUserData] = useState([]);
+  const [isShow, setIsShow] = useState(false);
 
   const url = 'http://localhost:3001/api/users/';
   
- const addUser =()=>{
+ const addUser =(e)=>{
+   e.preventDefault();
   Axios.post ('http://localhost:3001/api/user/',{name:name,age:age})
-  .then (alert('user added'));
-
+  .then (setIsShow(true));
   setName('');
   setAge('');
+  setIsShow(true);
+  setTimeout(() => {
+    setIsShow(false);
+  }, 1000)
 
+ }
+
+ const removeUser =(id)=>{
+    console.log(`http://localhost:3001/api/user/${id}`);
+    Axios.delete(`http://localhost:3001/api/user/${id}`)
+    .then (console.log('user deleted'))
+    .catch((err)=>{console.log(err);});
+  
  }
 
 useEffect(()=>{
@@ -26,10 +40,12 @@ Axios.get(url)
   setUserData(resp.data);
 })
 .catch((error=> console.log(error)))
-},[userData]);
+});
+
 
   return (
     <div className="App">
+
       <h1>React App with DB operations</h1>
      
      
@@ -40,21 +56,30 @@ Axios.get(url)
           (e)=>{setAge(e.target.value)}
         }/>
         <br/>
-        <button className='btn' onClick={()=>{addUser()}}>  Add </button>
-        <br/>
+        <button className='btn' onClick={(e)=>{addUser(e)}}>  Add </button>
+        <p></p>
+{
+  isShow ?
+  <div className='msg'> 
+      User added
+  </div>
+  : <p></p>
+}
                     
 <h2>Result of user</h2>
- {
-
+<div className='container'>
+{
   userData.map((person)=>{
-    return <p key={person.id}> {person.name} {person.age}</p>
+    return <div className='user' key={person.id}> 
+        <p>Name: {person.name} </p>
+        <p>Age: {person.age}</p>
+        <p><button className='btn' onClick={()=>{removeUser(person.id)}}> Delete</button></p>
+</div>
+
   })
-
- }   
-
-
-
-    </div>
+}
+</div>
+       </div>
   );
 }
 

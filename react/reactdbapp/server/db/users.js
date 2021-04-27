@@ -13,7 +13,8 @@ function insertUser(user){
 }
 
 function deletetUser(id){
-    return knex("users").where("id",id).del();
+    console.log('in delete user');
+    return knex("users").where({id:id}).del();
 }
 
 function updateUser(id, user){
