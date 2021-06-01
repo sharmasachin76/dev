@@ -1,33 +1,30 @@
-const knex = require('./knex');
+const knex = require("./knex");
 
-function getAllUsers(){
-    return knex("users").select("*");
+function getAllUsers() {
+  return knex("users").select("*");
 }
 
-function getUser(id){
-    return knex("users").where("id",id).select("*");
+function getUser(id) {
+  return knex("users").where("id", id).select("*");
 }
 
-function insertUser(user){
-    return knex("users").insert(user);
+function insertUser(user) {
+  return knex("users").insert(user);
 }
 
-function deletetUser(id){
-    console.log('in delete user');
-    return knex("users").where({id:id}).del();
+function deletetUser(id) {
+  console.log("in delete user");
+  return knex("users").where({ id: id }).del();
 }
 
-function updateUser(id, user){
-    return knex("users").where("id",id).update(user);
+function updateUser(id, user) {
+  return knex("users").where("id", id).update(user);
 }
-
-
-
 
 module.exports = {
-    getAllUsers,
-    getUser,
-    deletetUser,
-    updateUser,
-    insertUser
-}
+  getAllUsers,
+  getUser,
+  deletetUser,
+  updateUser,
+  insertUser,
+};

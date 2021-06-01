@@ -1,40 +1,38 @@
 .App {
   text-align: center;
-  display:flex;
+  display: flex;
   flex-direction: column;
-  width:90%;
+  width: 90%;
   height: 90%;
 }
 
-.form-control{
-  height:20px;
+.form-control {
+  height: 20px;
   width: 150px;
-  margin:auto;
-  
+  margin: auto;
 }
-.btn{
+.btn {
   background-color: black;
-  color:white;
+  color: white;
   width: 60px;
   margin: auto;
 }
 
-.btn:hover{
-  background-color:cornflowerblue;
-  cursor:pointer;
+.btn:hover {
+  background-color: cornflowerblue;
+  cursor: pointer;
 }
-.msg{
-  width:100px;
+.msg {
+  width: 100px;
   height: 20px;
   background-color: rgb(70, 60, 60);
-  color:white;
+  color: white;
   justify-content: center;
   text-align: center;
-  margin:auto;
-
+  margin: auto;
 }
 
-.container{
+.container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 85%;
@@ -42,16 +40,24 @@
   grid-gap: 10px;
   /* border-color: black;
   border:solid 1px; */
-
 }
-.user{
+.user {
   border-color: black;
-  border:solid 1px;
-  background-color:darkkhaki;
-  
+  border: solid 1px;
+  background-color: darkkhaki;
+
   width: 200px;
   height: 120px;
   border-radius: 5px;
-  margin:auto;
-  
+  margin: auto;
+}
+.student {
+  border-color: black;
+  border: solid 1px;
+  background-color: rgb(62, 212, 212);
+
+  width: 200px;
+  height: 120px;
+  border-radius: 5px;
+  margin: auto;
 }
