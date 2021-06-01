@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "Tagore Group of Schools",
+    "slug": "tgs-app",
+    "version": "0.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/tgs.png",
+    "splash": {
+      "image": "./assets/tgs.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.sharmaji2k.tgsapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
