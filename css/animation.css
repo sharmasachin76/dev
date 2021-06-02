@@ -1,0 +1,68 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+.one{
+    height:100px;
+    width:100px;
+    background-color: red;
+
+    /* properties for animation */
+    animation-name: dummy;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+
+}
+
+/* Animation definition applied on animation name dummy here */
+/* Two frames by default
+Multiple frame can go 1 to 100 %
+divide frames accordingly. like for 10 frames 10%
+
+if we leave time (not 100%) then it would animate 
+slowly to iitial position but in 100% it would be quick
+
+
+*/
+
+@keyframes dummy {
+    /* from{
+        background-color: red;
+    }   
+    to{
+        background-color: blue;
+    }  */
+
+    /* 10%{
+        background-color: red;
+    }
+    20%{
+        background-color: blue;
+    }
+    30%{
+        background-color: green;
+    }
+    100%{
+        background-color: black;
+    } */
+
+    20%{
+        margin-left:50px;
+    }
+    40%{
+        margin: left 100px;
+    }
+    60%{
+        margin-left:150px;
+    }
+    80%{
+        margin-left:200px;
+    }
+    /* 100%{
+        margin-left:250px;
+    } */
+
+
+}

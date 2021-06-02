@@ -1,0 +1,57 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* .one {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+} */
+
+.main {
+  height: 900px;
+  width: 100%;
+  background-color: lightgray;
+  display: flex;
+  /* flex-direction: column; */
+  /* display by default rox */
+
+  justify-content: space-evenly;
+  /* justify content work s with mmain axis */
+  /* align content is child prperty of justify content */
+  align-items: center;
+  /* align item works with cross axis */
+  /* if we dont want to shrink boxex use parent property flex wrap */
+  flex-wrap: wrap;
+  /* align-content is to remove space betweeeen rowby default it is flex start */
+}
+.main-child {
+  height: 200px;
+  /* width: 300px; */
+  /* flex basis is like mininmum width */
+  flex-basis: 300px;
+  /* if we need to add space at bottom use margin-bottom */
+}
+
+.one {
+  background-color: red;
+  /* it would take all available space  by default value is 1 1 signifuies th ratio
+  if one is 1 and other is 2 then it calculates size as per ratio*/
+  flex-grow: 1;
+  /* child can have property as order default value 0 it helps i changing 
+  the order smallest order go first */
+  order: 1;
+}
+
+.two {
+  background-color: blue;
+}
+
+.three {
+  background-color: green;
+}
+
+.four {
+  background-color: yellow;
+}

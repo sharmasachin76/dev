@@ -1,0 +1,83 @@
+<!DOCTYPE html>     
+<html>
+<head>
+    <title>
+        Transformation
+    </title>
+   <style>
+       *{
+           margin:0px;
+           padding:0px;
+       }
+       .one{
+            height:200px;
+            width:200px;
+            background-color: red;
+            margin:100px;
+            /* transition: 1s; */
+            /* transition: all ease; */
+            border-radius:50%;
+            border: solid 20px;
+            border-top-color: green;
+            border-bottom-color: grey;;
+       }
+
+       .one:hover{
+           /* background-color: green; */
+           /* tranform is property  */
+           /* element can be rotated on 3 axix x, y z */
+           /* transform:rotateX(180deg); */
+           /* transform:rotateY(180deg); */
+           transform:rotateZ(180deg);
+         
+       }
+       .two{
+            height:200px;
+            width:400px;
+            background-color: red;
+            margin:100px;
+            overflow:hidden;
+           
+       }
+
+       /* .two:hover{
+           transform: scale(1.5);
+           /* transform: scaleX(1.5);
+           transform: scaleY(1.5); */
+       } */
+
+       .img{
+        /* transition:0.3s; */
+        border: solid 1px;
+       }
+       .img:hover{
+        transform: scale(1.1);
+       }
+
+       .three{
+            height:200px;
+            width:400px;
+            background-color: red;
+            margin:100px;
+            transition: 1s;
+           
+       }
+
+       .three:hover{
+           transform: skewX(20deg);
+          
+       }
+
+
+   </style>
+</head>
+<body>
+ <div class="one"> 
+     </div>
+     <div class="two"> 
+         <img width="100%" src="./slider-images/DSC_2663.JPG">
+    </div>
+    <div class="three"> 
+    </div>
+</body>
+</html>
