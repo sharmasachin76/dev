@@ -1,0 +1,29 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  height: 70px;
+  background-color: grey;
+}
+
+/* a=max screes is 500 */
+/* @media (min-width:500px) and (max-width:500px){   */
+
+/* for tablet */
+@media screen and (max-width: 1024px) {
+  /* till screen size is less than 500 or upto 500 then header is blue else grey */
+  .header {
+    background-color: green;
+  }
+}
+
+/* for mobile */
+
+@media screen and (max-width: 500px) {
+  /* till screen size is less than 500 or upto 500 then header is blue else grey */
+  .header {
+    background-color: blue;
+  }
+}
