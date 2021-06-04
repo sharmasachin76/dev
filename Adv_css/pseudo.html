@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pseudo Elements</title>
+    <style>
+        p{
+            height: 100px;
+            width: 100px;
+            background-color: gray;
+        }
+
+        p::after{
+            content: 'After Element';
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            background-color: yellow;
+
+        }
+
+        p::before{
+            content: 'Before Element';
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            background-color: yellow;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+
+    <p>
+        Hello
+    </p>
+    
+</body>
+</html>

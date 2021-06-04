@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.main{
+    height: 600px;
+    width: 100%;
+    background-color: gray;
+    overflow: hidden;
+}
+
+.main_child{
+    height: 600px;
+    width: 500%;
+    background-color: red;
+    display: flex;
+
+    animation-name: slider;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-delay: 4s;
+    
+}
+
+
+.slider_content{
+    height: 300px;
+    width: 40%;
+    background-color: rgba(255,255,255,.3);
+    border: 15px solid white;
+    box-shadow: 0 0 10px black;
+    /* color: white; */
+    margin-left: 30%;
+    margin-top: 100px;
+    display: inline-block;
+    font-family: 'Segoe UI';
+    line-height: 300px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+.main_child:hover{
+    animation-play-state: paused;
+}
+
+
+
+
+.ele{
+    height: 600px;
+    width: 20%;
+    background-color: green;
+    font-size: 100px;
+    
+}
+
+.ele:nth-child(1){
+    background-image: url('./slider-images/slide1.jpg');
+}
+
+.ele:nth-child(2){
+    background-image: url('./slider-images/slide2.jpg');
+}
+
+.ele:nth-child(3){
+    background-image: url('./slider-images/slide3.jpg');
+}
+
+.ele:nth-child(4){
+    background-image: url('./slider-images/slide4.jpg');
+}
+
+.ele:nth-child(5){
+    background-image: url('./slider-images/slide1.jpg');
+}
+
+@keyframes slider {
+    
+    12.5%{
+        margin-left: -100%;
+    }
+
+    25%{
+        margin-left: -100%;
+    }
+
+    37.5%{
+        margin-left:-200% ;
+    }
+
+    50%{
+        margin-left:-200% ;
+    }
+
+    62.5%{
+        margin-left: -300%;
+    }
+
+    75%{
+        margin-left: -300%;
+    }
+
+    87.5%{
+        margin-left: -400%;
+    }
+
+    100%{
+        margin-left: -400%;
+    }
+
+
+
+}
+
+
+
+
+
+

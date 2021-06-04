@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Transformation</title>
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .one{
+            height: 200px;
+            width: 200px;
+            background-color: gray;
+            margin: 100px;
+            border-radius: 50%;
+            transition: 1s;
+            font-size: 50px;
+            border: 20px solid black;
+            border-top-color: red;
+            border-bottom-color: green;
+        }
+
+        .one:hover{
+
+            transform: rotateZ(1800deg);
+           
+
+        }
+
+        .two{
+            height: 300px;
+            width: 400px;
+            background-color: red;
+            margin: 100px;
+            overflow: hidden;
+        }
+
+        img{
+            
+            transition: .3s;
+        }
+
+        img:hover{
+            transform: scale(1.5);
+        }
+
+        .three{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            margin: 100px;
+            transition: .5s;
+        }
+
+        .three:hover{
+            transform: skewY(50deg);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="one">
+        
+    </div>
+
+    <div class="two">
+        <img width="100%" src="https://static.toiimg.com/photo/msid-81304521/81304521.jpg?616978">
+    </div>
+
+    <div class="three">
+
+    </div>
+    
+</body>
+</html>
